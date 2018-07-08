@@ -1,6 +1,6 @@
 #!/bin/bash
-rm -rvf /srv/salt/*
-cp -R salt/* /srv/salt/
-#systemctl restart salt-minion.service
-systemctl restart salt-master.service
+## copy salt master
+sudo cp master /etc/salt
 
+sudo /etc/init.d/salt-master restart
+sudo /etc/init.d/salt-master status

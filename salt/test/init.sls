@@ -1,3 +1,4 @@
-test-case:
+test:
   pkg.installed:
-	- htop
+    - pkgs: 
+        - htop
