@@ -1,4 +1,6 @@
 #!/bin/bash
 rm -rvf /srv/salt/*
-cp salt/* /srv/salt
-systemctl restart salt-minion.service
+cp -R salt/* /srv/salt
+#systemctl restart salt-minion.service
+systemctl restart salt-master.service
+
