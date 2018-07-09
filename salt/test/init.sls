@@ -1,4 +1,4 @@
 test:
   pkg.installed:
     - pkgs: 
-        - htop
+      - htop
